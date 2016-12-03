@@ -1,0 +1,18 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{title}} - Medical Transport Scheduler, Local Hack Day</title>
+    {% else %}
+    <title>Welcome to the Medical Transport Scheduler, Local Hack Day</title>
+    {% endif %}
+  </head>
+  <body>
+    <div style="text-align: center">MEDICAL TRANSPORT SCHEDULER: <br />
+      <a href="/index">Home</a> | 
+      <a href="/upload">Upload Data</a> |
+      <a href="/reports">Generate Reports</a>
+      </div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>
