@@ -11,5 +11,5 @@ OPENID_PROVIDERS = [
 import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 
-SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
+SQLALCHEMY_DATABASE_URI = 'mysql://med:tiger@10.109.133.147/meduber'
 SQLALCHEMY_MIGRATE_REPO = os.path.join(basedir, 'db_repository')
