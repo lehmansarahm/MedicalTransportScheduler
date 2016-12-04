@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+    <h3>Report: Patient Trips in Last 30 Days for SARAH</h3>
+    <table>
+    	<thead>
+    		<tr>
+    			<th>Appointment Time</th>
+    			<th>Appointment Location</th>
+    			<th>Pick-up Location</th>
+    			<th>View Map</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+    			<td>12:00</td>
+    			<td>145 Market St, Philadelphia PA</td>
+    			<td>655 Chestnut St, Philadelphia PA</td>
+    			<td><a href=""><img src="../static/map_marker.svg" height="20px" /></a></td>
+    		</tr>
+    		<tr>
+    			<td>10:00</td>
+    			<td>788 Market St, Philadelphia PA</td>
+    			<td>655 Chestnut St, Philadelphia PA</td>
+    			<td><a href=""><img src="../static/map_marker.svg" height="20px" /></a></td>
+    		</tr>
+    		<tr>
+    			<td>09:00</td>
+    			<td>145 Market St, Philadelphia PA</td>
+    			<td>655 Chestnut St, Philadelphia PA</td>
+    			<td><a href=""><img src="../static/map_marker.svg" height="20px" /></a></td>
+    		</tr>
+    		<tr>
+    			<td>10:00</td>
+    			<td>788 Market St, Philadelphia PA</td>
+    			<td>655 Chestnut St, Philadelphia PA</td>
+    			<td><a href=""><img src="../static/map_marker.svg" height="20px" /></a></td>
+    		</tr>
+    	</tbody>
+    </table>
+
+{% endblock %}

@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>Medical Transport Scheduler</h1>
-    
     <h3>Schedule Generator</h3>
-    <p>This is where we will be able to generate the schedule for the day.  Dispatcher will eventually be able to configure different aspects for the schedule such as number / starting points of cars, appointment / patient priorities, etc.</p>
+    <p>Please use the form below to generate a MedUber driving schedule.</p>
+    <form name="generate" action="/confirm" method="get">
+		Schedule Date: <input type="date" name="datafile">
+		<br/>
+		<input type="submit" value="Submit">
+	</form> 
 {% endblock %}

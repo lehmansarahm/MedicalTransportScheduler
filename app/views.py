@@ -16,6 +16,27 @@ def index():
 # -----------------------------------------------------------------------------
 # -----------------------------------------------------------------------------
 
+@app.route('/upload')
+def upload():
+	return render_template('upload.html',title='Upload Data')
+
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+
+@app.route('/configure')
+def configure():
+	return render_template('configure.html',title='Configure Schedule')
+
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+
+@app.route('/confirm')
+def confirm():
+	return render_template('confirm.html',title='Confirm Schedule')
+
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+
 @app.route('/schedule')
 def schedule():
 	# Replace with the correct URL
@@ -60,6 +81,27 @@ def schedule():
 @app.route('/reports')
 def reports():
 	return render_template('reports.html',title='Scheduler Reports')
+
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+
+@app.route('/reportPatientTrips')
+def reportPatientTrips():
+	return render_template('reportPatientTrips.html',title='Report:  Patient Trips in Last 30 Days')
+
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+
+@app.route('/reportDriverTrips')
+def reportDriverTrips():
+	return render_template('reportDriverTrips.html',title='Report:  Driver Trips in Last 30 Days')
+
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+
+@app.route('/reportDriverHours')
+def reportDriverHours():
+	return render_template('reportDriverHours.html',title='Report:  Driver Active Hours in Last 30 Days')
 
 # -----------------------------------------------------------------------------
 # -----------------------------------------------------------------------------

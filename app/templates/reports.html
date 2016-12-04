@@ -1,7 +1,46 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>Medical Transport Scheduler</h1>
-    
     <h3>Reports</h3>
-    <p>This is where we will be able to run reports (driving history, patient appointment history, anything we can think of).</p>
+    <p>Please select from the following list of reports to run.</p>
+
+    <h5>Trips in the Last 30 Days by Patient</h5>
+    <form name="patientTrips" action="/reportPatientTrips" method="get">
+		Patient Name:
+	    <select>
+		  <option value="dusan">Dusan</option>
+		  <option value="natalia">Natalia</option>
+		  <option value="sarah">Sarah</option>
+		  <option value="sergei">Sergei</option>
+		  <option value="stephen">Stephen</option>
+		</select>
+		<br/>
+		<input type="submit" value="Submit">
+	</form> 
+
+    <h5>Trips in the Last 30 Days by Driver</h5>
+    <form name="driverTrips" action="/reportDriverTrips" method="get">
+		Driver:
+	    <select>
+		  <option value="dusan">Car 1</option>
+		  <option value="natalia">Car 2</option>
+		  <option value="sarah">Van 1</option>
+		  <option value="sergei">Van 2</option>
+		</select>
+		<br/>
+		<input type="submit" value="Submit">
+	</form> 
+
+    <h5>Driving Hours in the Last 30 Days by Driver</h5>
+    <form name="driverHours" action="/reportDriverHours" method="get">
+		Driver:
+	    <select>
+		  <option value="dusan">Car 1</option>
+		  <option value="natalia">Car 2</option>
+		  <option value="sarah">Van 1</option>
+		  <option value="sergei">Van 2</option>
+		</select>
+		<br/>
+		<input type="submit" value="Submit">
+	</form> 
+
 {% endblock %}

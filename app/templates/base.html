@@ -1,18 +1,28 @@
 <html>
   <head>
+	<style>
+		table, th, td {
+		    border: 1px solid black;
+		    text-align: center;
+		}
+	</style>
     {% if title %}
-    <title>{{title}} - Medical Transport Scheduler, Local Hack Day</title>
+    <title>{{title}} - MedUber, Local Hack Day</title>
     {% else %}
-    <title>Welcome to the Medical Transport Scheduler, Local Hack Day</title>
+    <title>Welcome to MedUber - the Medical Transport Scheduler, Local Hack Day</title>
     {% endif %}
   </head>
   <body>
-    <div style="text-align: center">MEDICAL TRANSPORT SCHEDULER: <br />
-      <a href="/index">Home</a> | 
-      <a href="/schedule">Generate Schedule</a> |
-      <a href="/reports">Run Reports</a>
-      </div>
-    <hr>
-    {% block content %}{% endblock %}
+  	<div style="width:800px; margin:0 auto;">
+	    <div style="text-align: center">MED-UBER: <br />
+	      <a href="/index">Home</a> | 
+	      <a href="/upload">Upload Data</a> |
+	      <a href="/schedule">Generate Schedule</a> |
+	      <a href="/reports">Run Reports</a>
+	      </div>
+	    <hr>
+	    <h1>MedUber</h1>
+	    {% block content %}{% endblock %}
+  	</div>
   </body>
 </html>

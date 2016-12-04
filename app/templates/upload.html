@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h3>Upload Data</h3>
+    <p>Use the form below to submit an Excel spreadsheet of data to the MedUber database.</p>
+    <form name="upload" action="/configure" method="get">
+		Data File: <input type="file" name="datafile">
+		<br/>
+		<input type="submit" value="Submit">
+	</form> 
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    <h3>Configure Schedule</h3>
+    <p>Thank you for uploading appointment data to MedUber!  Please use the form below to let us know how many vehicles will be available on the desired day.</p>
+    <form name="configure" action="/confirm" method="get">
+    	<table>
+    		<tr><td>Schedule Date: </td><td><input type="date" name="scheduleDate"></td></tr>
+    		<tr><td>Number of 4-person Cars Available: </td><td><input type="number" min="0" max="10"></td></tr>
+    		<tr><td>Number of 8-person Vans Available: </td><td><input type="number" min="0" max="10"></td></tr>
+    		<tr><td>Number of 15-person Vans Available: </td><td><input type="number" min="0" max="10"></td></tr>
+    	</table>
+		<br/>
+		<input type="submit" value="Submit">
+	</form> 
+{% endblock %}
