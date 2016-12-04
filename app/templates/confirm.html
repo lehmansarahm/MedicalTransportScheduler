@@ -1,62 +1,79 @@
 {% extends "base.html" %}
 {% block content %}
     <h3>New Schedule Generated:  Jan 20, 2017</h3>
+    <iframe id="map1" width="800" style="display:block;"
+      src="//www.google.com/maps/embed/v1/directions?origin=145+Market+St+Philadelphia+PA
+      &destination=655+Chestnut+St+Philadelphia+PA
+      &key=AIzaSyBD4XXZA5mfz-8nUPEDfVsINGHijxfjBWo"></iframe>
+    <script type="text/javascript">
+        function swapFrames() {
+            if ( $("map1").css('visibility') = 'hidden') {
+              $("map1").css('visibility') = 'visible';
+              $("map1").css('display') = 'block';
+            }
+            else {
+              $("map1").css('visibility') = 'hidden';
+              $("map1").css('display') = 'none';
+            }
+        }
+    </script>
+
     <h5>Car 1:  4 passengers</h5>
     <table>
-    	<thead>
-    		<tr>
-    			<th>Patient Name</th>
-    			<th>Appointment Time</th>
-    			<th>Appointment Location</th>
-    			<th>Pick-up Location</th>
-    			<th>View Map</th>
-    		</tr>
-    	</thead>
-    	<tbody>
-    		<tr>
-    			<td>Sarah</td>
-    			<td>09:00</td>
-    			<td>145 Market St, Philadelphia PA</td>
-    			<td>655 Chestnut St, Philadelphia PA</td>
-    			<td><a href=""><img src="../static/map_marker.svg" height="20px" /></a></td>
-    		</tr>
-    		<tr>
-    			<td>Stephen</td>
-    			<td>10:00</td>
-    			<td>788 Market St, Philadelphia PA</td>
-    			<td>655 Chestnut St, Philadelphia PA</td>
-    			<td><a href=""><img src="../static/map_marker.svg" height="20px" /></a></td>
-    		</tr>
-    	</tbody>
+        <thead>
+            <tr>
+                <th>Patient Name</th>
+                <th>Appointment Time</th>
+                <th>Appointment Location</th>
+                <th>Pick-up Location</th>
+                <th>View Map</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sarah</td>
+                <td>09:00</td>
+                <td>145 Market St, Philadelphia PA</td>
+                <td>655 Chestnut St, Philadelphia PA</td>
+                <td><a href="#" onclick="swapFrames()"><img src="../static/map_marker.svg" height="20px" /></a></td>
+            </tr>
+            <tr>
+                <td>Stephen</td>
+                <td>10:00</td>
+                <td>788 Market St, Philadelphia PA</td>
+                <td>655 Chestnut St, Philadelphia PA</td>
+                <td><a href="" onclick="swapFrames()"><img src="../static/map_marker.svg" height="20px" /></a></td>
+            </tr>
+        </tbody>
     </table>
 
     <h5>Car 2:  4 passengers</h5>
     <table>
-    	<thead>
-    		<tr>
-    			<th>Patient Name</th>
-    			<th>Appointment Time</th>
-    			<th>Appointment Location</th>
-    			<th>Pick-up Location</th>
-    			<th>View Map</th>
-    		</tr>
-    	</thead>
-    	<tbody>
-    		<tr>
-    			<td>Natalia</td>
-    			<td>12:00</td>
-    			<td>145 Market St, Philadelphia PA</td>
-    			<td>655 Chestnut St, Philadelphia PA</td>
-    			<td><a href=""><img src="../static/map_marker.svg" height="20px" /></a></td>
-    		</tr>
-    		<tr>
-    			<td>Sergei</td>
-    			<td>10:00</td>
-    			<td>788 Market St, Philadelphia PA</td>
-    			<td>655 Chestnut St, Philadelphia PA</td>
-    			<td><a href=""><img src="../static/map_marker.svg" height="20px" /></a></td>
-    		</tr>
-    	</tbody>
+        <thead>
+            <tr>
+                <th>Patient Name</th>
+                <th>Appointment Time</th>
+                <th>Appointment Location</th>
+                <th>Pick-up Location</th>
+                <th>View Map</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Natalia</td>
+                <td>12:00</td>
+                <td>145 Market St, Philadelphia PA</td>
+                <td>655 Chestnut St, Philadelphia PA</td>
+                <td><a href=""><img src="../static/map_marker.svg" height="20px" /></a></td>
+            </tr>
+            <tr>
+                <td>Sergei</td>
+                <td>10:00</td>
+                <td>788 Market St, Philadelphia PA</td>
+                <td>655 Chestnut St, Philadelphia PA</td>
+                <td><a href=""><img src="../static/map_marker.svg" height="20px" /></a></td>
+            </tr>
+        </tbody>
     </table>
 
     <h5>Van 1:  8 passengers</h5>
@@ -64,23 +81,23 @@
 
     <h5>Van 2:  15 passengers</h5>
     <table>
-    	<thead>
-    		<tr>
-    			<th>Patient Name</th>
-    			<th>Appointment Time</th>
-    			<th>Appointment Location</th>
-    			<th>Pick-up Location</th>
-    			<th>View Map</th>
-    		</tr>
-    	</thead>
-    	<tbody>
-    		<tr>
-    			<td>Dusan</td>
-    			<td>09:00</td>
-    			<td>145 Market St, Philadelphia PA</td>
-    			<td>655 Chestnut St, Philadelphia PA</td>
-    			<td><a href=""><img src="../static/map_marker.svg" height="20px" /></a></td>
-    		</tr>
-    	</tbody>
+        <thead>
+            <tr>
+                <th>Patient Name</th>
+                <th>Appointment Time</th>
+                <th>Appointment Location</th>
+                <th>Pick-up Location</th>
+                <th>View Map</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dusan</td>
+                <td>09:00</td>
+                <td>145 Market St, Philadelphia PA</td>
+                <td>655 Chestnut St, Philadelphia PA</td>
+                <td><a href=""><img src="../static/map_marker.svg" height="20px" /></a></td>
+            </tr>
+        </tbody>
     </table>
 {% endblock %}
